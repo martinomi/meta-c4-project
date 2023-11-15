@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Products {
+  background-image: url("BG\ IMG.webp"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #495e57;
+  padding: 20px 30px 20px 30px;
+}
+
+nav ul {
+  display: inline-flex;
+  align-items: start;
+  justify-items: right;
+  justify-content: right;
+  gap: 60px;
+
+  list-style: none;
+  font-family: "Futura PT", sans-serif;
+
+  font-size: 35 px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: white;
+}
+.Logo {
+  height: 100px;
+}
+
+.Products {
+  color: white;
+  display: flex;
+  height: 80vh;
+  justify-content: right;
+  align-items: center;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+  padding-right: 30px;
+}
+button {
+  color: white;
+  background-color: black;
+  padding: 10px 30px 10px 30px;
+  border-radius: 30px;
+  border-color: black;
+  border-style: none;
+}
+button:hover {
+  cursor: pointer;
+  color: powderblue;
+  background-color: black;
+  padding: 10px 30px 10px 30px;
+  border-radius: 30px;
+}
+.heading {
+  display: flex;
+  justify-content: right;
+  font-size: 20px;
+}
+.section-text {
+  font-family: "LTC Bodoni 175 W01 Regular";
+  font-weight: 400;
+  font-size: 100px;
+  letter-spacing: 0em;
+  line-height: 1.1em;
+  text-align: right;
+  text-transform: none;
+
+  justify-content: right;
+}
+
+footer {
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 10vh;
+  background-color: #495e57;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20pxs;
+}
+footer a {
+  color: white;
+}
+footer a::after {
+  color: purple;
+}
+footer a:hover {
+  cursor: pointer;
+  color: powderblue;
+  justify-content: right;
+  align-items: center;
+}

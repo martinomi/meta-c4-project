@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 90%;
+  max-width: 90em;
+  margin: 0 auto;
+}
+section {
+  display: flex;
+  width: 100%;
+  margin: 2em 0;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+a.logo {
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1em 0 2em;
+  border-bottom: 1px solid black;
+}
+a.logo img {
+  width: 4.5em;
+}
+a.logo h1 {
+  color: black;
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+  font-size: 1.3em;
+}
+ul.menu-list {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+ul.menu-list li {
+  padding: 0.5em 1em;
+}
+ul.menu-list li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  color: white;
+}
+section#home,
+section#book,
+section#about {
+  margin: 2em 0;
+}
+section#home .bg-image,
+section#book .bg-image,
+section#about .bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 25em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 2em;
+}
+@media (min-width: 48em) {
+  section#home .bg-image,
+  section#book .bg-image,
+  section#about .bg-image {
+    padding: 4em;
+  }
+}
+section#home .bg-image::before,
+section#book .bg-image::before,
+section#about .bg-image::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: black;
+  opacity: 0.6;
+}
+section#home .bg-image .content,
+section#book .bg-image .content,
+section#about .bg-image .content {
+  position: relative;
+  padding: 2em 0;
+  max-width: 50em;
+}
+section#home .bg-image .content h1,
+section#home .bg-image .content p,
+section#book .bg-image .content h1,
+section#book .bg-image .content p,
+section#about .bg-image .content h1,
+section#about .bg-image .content p {
+  color: white;
+  margin: 0.5em 0;
+}
+section#home .bg-image .content h1,
+section#book .bg-image .content h1,
+section#about .bg-image .content h1 {
+  font-size: 2em;
+  letter-spacing: 1px;
+  line-height: 0.9em;
+}
+@media (min-width: 48em) {
+  section#home .bg-image .content h1,
+  section#book .bg-image .content h1,
+  section#about .bg-image .content h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+}
+section#home .bg-image .content p,
+section#book .bg-image .content p,
+section#about .bg-image .content p {
+  font-weight: 100;
+  font-size: 1em;
+}
+section#menu .food-menu .food-item {
+  width: 100%;
+  display: flex;
+  padding: 1em;
+}
+@media (min-width: 48em) {
+  section#menu .food-menu .food-item {
+    width: calc(50% - 2em);
+  }
+}
+@media (min-width: 60em) {
+  section#menu .food-menu .food-item {
+    width: calc(25% - 2em);
+  }
+}
+section#menu .food-menu .food-item .food {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  min-height: 15em;
+  position: relative;
+}
+section#menu .food-menu .food-item .food::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: black;
+  opacity: 0.6;
+}
+section#menu .food-menu .food-item .food h5 {
+  position: relative;
+  color: white;
+  padding: 1.5em;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+section#book .bg-image .content .btn {
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  padding: 0.9em 2em;
+  font-size: 0.9em;
+  font-weight: 600;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  margin: 2em 0;
+}
+section#book .bg-image .content .btn:hover {
+  background-color: black;
+  color: white;
+}
+section#about h6 {
+  font-size: 1.3em;
+  color: white;
+  font-weight: 400;
+  margin: 1em 0 0;
+}
+section#about span {
+  font-size: 0.9em;
+  color: white;
+  font-weight: 300;
+  display: block;
+  margin: 0.5em 0;
+}
+footer .flex.ft {
+  justify-content: space-between;
+  padding: 1.5em 0;
+}
+footer .flex.ft a.logo {
+  border: none;
+  padding: 0;
+  width: 100%;
+  padding: 1em 0;
+}
+@media (min-width: 48em) {
+  footer .flex.ft a.logo {
+    width: fit-content;
+  }
+}
+footer .flex.ft .copy {
+  border-top: 1px solid black;
+  width: 100%;
+}
+@media (min-width: 48em) {
+  footer .flex.ft .copy {
+    width: 50%;
+  }
+}
+footer .flex.ft .copy p {
+  padding: 1em 0;
+  text-align: center;
+}
+@media (min-width: 48em) {
+  footer .flex.ft .copy p {
+    text-align: right;
+  }
+}
